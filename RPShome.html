@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+
+    <title>RT'S RPS</title>
+
+    <style>
+
+    body {
+      background: url(bakis.jpg) no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      min-height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    header h1 {
+      color: #ffffff;
+      -webkit-text-stroke: 1.5px black;
+      font-size: 90px;
+      margin: 10px;
+    }
+
+    .portrait {
+      position: relative;
+      display: inline-block;
+      margin: 50px;
+      width: fit-content;
+    }
+
+    .portrait img {
+      display: block;
+      height: 300px;
+      width: auto;
+      transition: transform 0.3s, opacity 0.3s;
+      filter: drop-shadow(0 0 20px rgb(42, 42, 42));
+    }       
+
+    .portrait:hover img {
+      transform: scale(1.1);
+      opacity: 0.75;
+      cursor: pointer;
+    }
+
+    .portrait p {
+      position: absolute;
+      top: 43%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #000000;
+      -webkit-text-stroke: 1px black;
+      
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s, transform 0.3s;
+      font-size: 20px;
+    }
+
+    .portrait:hover p {
+      opacity: 1;
+
+    }
+
+    .rules h2{
+        text-decoration: none;
+        color: #ffffff;
+        transition: 0.3s;
+        -webkit-text-stroke: 1px black;        
+    }
+
+    .rules a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .rules:hover h2{
+        cursor: pointer;
+        transform: scale(1.1);
+
+    }    
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>RT'S RPS</h1>
+    </header>
+
+    <Div class="rules">
+        <a href="rpsrules.html"><h2>Rules</h2>
+        </a>    
+
+    </Div>
+
+  <div>
+    <Div class="portrait">
+      <a href="RPSinfinite.html">
+      <img src="rpsbasic.jpg" alt="">
+      </a>
+      <p>Infinite</p>
+    </Div>
+
+    <Div class="portrait">
+      <a href="RPSbestof3.html">
+      <img src="rpsbasicteal.jpg" alt="">
+      </a>
+      <p>Best of 3</p>
+    </Div>        
+
+    <Div class="portrait">
+        <a href="Rpsbestto5.html">
+      <img src="rpsbasicpurple.jpg" alt="">
+      </a>
+      <p>Best of 5</p>
+    </Div>
+  </div>  
+
+  <div>
+
+    <Div class="portrait">
+        <a href="rtsrpsinfinite.html">
+      <img src="rtrpspicture.jpg" alt="">
+      </a>
+      <p>Infinite</p>
+    </Div>
+
+    <Div class="portrait">
+      <a href="rtsrpsbestof3.html">
+      <img src="rtsrpspicteal.jpg" alt="">
+      </a>
+      <p>Best of 3</p>
+    </Div>        
+
+    <Div class="portrait">
+      <a href="rtsrpsbetto5.html">
+        <img src="rtrpspicpurple.jpg" alt="">
+      </a>  
+      
+      <p>Best of 5</p>
+    </Div>                
+
+    </div>
+
+  </body>
+</html>
